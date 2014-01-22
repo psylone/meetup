@@ -53,4 +53,11 @@ Meetup::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  resources :main, only: :index do
+    get :roll, on: :collection
+  end
+
+  root to: 'main#index'
+
 end

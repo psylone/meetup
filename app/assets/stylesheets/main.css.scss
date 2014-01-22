@@ -1,0 +1,23 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.main{
+  text-align:center;
+  margin-top:150px;
+
+  .date{
+    display:inline-block;
+    .more-date{
+      display:block;
+      text-align:right;
+      text-decoration:none;
+      a{
+        text-decoration:none;
+        &:hover{
+          border-bottom:dotted 1px;
+        }
+      }
+    }
+  }
+}
